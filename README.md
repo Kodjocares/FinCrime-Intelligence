@@ -71,7 +71,7 @@ A production-grade financial crime investigation platform covering all five core
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/fincrime-intelligence.git
+git clone https://github.com/kodjocares/fincrime-intelligence.git
 cd fincrime-intelligence
 
 # Install dependencies
