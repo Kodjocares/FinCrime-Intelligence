@@ -71,7 +71,7 @@ A production-grade financial crime investigation platform covering all five core
 
 ```bash
 # Clone the repo
-git clone https://github.com/kodjocares/fincrime-intelligence.git
+git clone https://github.com/YOUR_USERNAME/fincrime-intelligence.git
 cd fincrime-intelligence
 
 # Install dependencies
@@ -227,4 +227,3 @@ MIT © 2025
 - [Chainalysis Crypto Crime Report](https://www.chainalysis.com/crypto-crime-report/)
 - [OpenSanctions Database](https://www.opensanctions.org)
 - [Anthropic API Docs](https://docs.anthropic.com)
-

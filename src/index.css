@@ -1,0 +1,82 @@
+/* FinCrime Intelligence Platform — Global Styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #07080d;
+  --surface: #0b0d14;
+  --card: #0f1119;
+  --border: #171c28;
+  --border-active: #2a3347;
+  --amber: #f59e0b;
+  --amber-fade: #451a03;
+  --red: #f43f5e;
+  --red-fade: #4c0519;
+  --green: #10b981;
+  --green-fade: #022c22;
+  --blue: #818cf8;
+  --blue-fade: #1e1b4b;
+  --cyan: #22d3ee;
+  --purple: #a855f7;
+  --text: #e2e8f0;
+  --sub: #8892a4;
+  --muted: #3d4a5c;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-ui: 'DM Sans', sans-serif;
+  --font-display: 'Syne', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-active); }
+
+/* Inputs */
+input::placeholder { color: var(--muted); }
+input:focus { border-color: var(--amber) !important; box-shadow: 0 0 0 2px #f59e0b18; }
+
+/* Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Utility */
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+.slide-in { animation: slideIn 0.25s ease forwards; }
+
+/* Table row hover */
+tr:hover { background: #2a334718 !important; }
+
+/* Button hover */
+button:hover:not(:disabled) { filter: brightness(1.12); }
+button:disabled { cursor: not-allowed; opacity: 0.5; }
